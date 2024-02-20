@@ -6,6 +6,7 @@ import Button from "../Standart/Button/Button";
 import H2 from "../Standart/H2/H2";
 import Text from "../Standart/Text/Text";
 import EventBlock from "../Blocks/EventBlock/EventBlock";
+import MessageBlock from "../Blocks/MessageBlock/MessageBlock";
 
 import backgroundMainImg from "../../assets/backgroundMainImg.png"
 import logo from "../../assets/герб.png"
@@ -16,10 +17,6 @@ import mainBlockLineImg from "../../assets/mainBlockLineImg.png"
 import chatBackground from "../../assets/chatBackground.png"
 
 function Main_Page({ children, ...props }) {
-    function click() {
-        console.log('12rtyedrtye3');
-    }
-
     return (
         <>
             <main>
@@ -101,19 +98,7 @@ function Main_Page({ children, ...props }) {
                                     Сообщения отправляются с интервалом в 5 минут.
                                 </Text>
                             </ColumnBlock>
-                            <textarea id="" placeholder="Ваше сообщение" style={{
-                                width: '708px',
-                                height: '238px',
-                                borderRadius: '20px',
-                                padding: '30px',
-                                outline: 'none',
-                                fontSize: '16px',
-                                resize: 'none',
-                            }}></textarea>
-
-                            <Button onClick={click} width={'319px'} height={'60px'}>
-                                Отправить
-                            </Button>
+                            <MessageBlock/>
                         </CenterBlock>
                     </ColumnBlock>
                 </CenterBlock>
