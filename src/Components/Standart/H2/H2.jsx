@@ -1,10 +1,10 @@
 import React from "react";
-import classes from './H1.module.css';
+import classes from './H2.module.css';
 
-function H1({ children, ...props }) {
+function H2({ children, ...props }) {
     return (
         <>
-            <h1 style={{
+            <h2 style={{
                 fontFamily: props.font_family,
                 fontSize: props.font_size,
                 fontWeight: props.font_weight,
@@ -18,9 +18,9 @@ function H1({ children, ...props }) {
                 display: props.display,
             }}>
                 {children}
-            </h1>
+            </h2>
         </>
     );
 }
 
-export default H1;
+export default H2;
