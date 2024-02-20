@@ -1,10 +1,10 @@
 import React from "react";
-import classes from './H2.module.css';
+import classes from './Text.module.css';
 
-function H2({ children, ...props }) {
+function Text({ children, ...props }) {
     return (
         <>
-            <h2 style={{
+            <div className={classes.Text} style={{
                 fontFamily: props.font_family,
                 fontSize: props.font_size,
                 fontWeight: props.font_weight,
@@ -19,9 +19,9 @@ function H2({ children, ...props }) {
                 color: props.color,
             }}>
                 {children}
-            </h2>
+            </div>
         </>
     );
 }
 
-export default H2;
+export default Text;

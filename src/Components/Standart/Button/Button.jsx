@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 function Button({ children, ...props }) {
     return (
         <>
-            <Link href={props.link} className={classes.Button} style={{ width: props.width, height: props.height }}>
+            <Link {...props} href={props.link} className={classes.Button} style={{ width: props.width, height: props.height }}>
                 {children}
             </Link>
         </>
