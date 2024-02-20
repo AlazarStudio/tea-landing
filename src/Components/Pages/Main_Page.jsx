@@ -10,7 +10,7 @@ function Main_Page({ children, ...props }) {
                 height={'100vh'}
                 background={backgroundMainImg}
             >
-                sdfgsdfg
+                
             </CenterBlock>
         </>
     );
