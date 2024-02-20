@@ -9,8 +9,8 @@ function Header({ children, ...props }) {
             <header className={classes.Header}>
                 <CenterBlock>
                     <ul>
-                        <li><a href="">Программа</a></li>
-                        <li><a href="">Интерактивный чат</a></li>
+                        <li><a href="#programm">Программа</a></li>
+                        <li><a href="#chat">Интерактивный чат</a></li>
                         <li><a href="">Регистрация</a></li>
                     </ul>
                 </CenterBlock>

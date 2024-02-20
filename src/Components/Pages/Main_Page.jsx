@@ -63,7 +63,7 @@ function Main_Page({ children, ...props }) {
                     <img src={mainBlockLineImg} alt="" width={'100%'} style={{ marginTop: '-81px' }} />
                 </CenterBlock>
 
-                <CenterBlock width={'100%'}>
+                <CenterBlock width={'100%'} id="programm">
                     <ColumnBlock width={'var(--blockWidth)'} gap={'80px'}>
                         <H2>ПРОГРАММА МЕРОПРИЯТИЯ</H2>
                         <ColumnBlock>
@@ -86,7 +86,7 @@ function Main_Page({ children, ...props }) {
                     </ColumnBlock>
                 </CenterBlock>
 
-                <CenterBlock>
+                <CenterBlock id="chat">
                     <ColumnBlock width={'var(--blockWidth)'} gap={'80px'} background={chatBackground} padding={'50px'} borderRadius={'30px'}>
                         <CenterBlock gap={'50px'}>
                             <H2 color={'#fff'}>ИНТЕРАКТИВНЫЙ ЧАТ</H2>

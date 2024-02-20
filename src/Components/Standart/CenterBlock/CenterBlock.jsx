@@ -4,7 +4,7 @@ import classes from './CenterBlock.module.css';
 function CenterBlock({ children, ...props }) {
     return ( 
         <>
-            <div className={classes.CenterBlock} style={{
+            <div {...props} className={classes.CenterBlock} style={{
                 width: props.width,
                 height: props.height,
                 gap: props.gap,
