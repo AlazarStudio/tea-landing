@@ -1,4 +1,10 @@
-ul {
+.Header{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+.Header ul {
     list-style: none;
     display: flex;
     gap: 100px;
@@ -9,6 +15,6 @@ ul {
     letter-spacing: 0em;
 }
 
-ul a{
+.Header ul a{
     color: #fff;
 }

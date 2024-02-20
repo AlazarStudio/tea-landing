@@ -4,7 +4,7 @@ import classes from './MyH1.module.css';
 function MyH1({ children, ...props }) {
     return (
         <>
-            <h1 {...props} style={{
+            <h1 style={{
                 fontFamily: props.font_family,
                 fontSize: props.font_size,
                 fontWeight: props.font-weight,
