@@ -7,7 +7,10 @@ function ColumnBlock({ children, ...props }) {
             <div {...props} className={classes.ColumnBlock} style={{
                 width: props.width,
                 height: props.height,
-                gap: props.gap
+                gap: props.gap,
+                background: `url(${props.background})`,
+                backgroundRepeat: 'no-repeat',
+                backgroundSize: 'cover'
             }}>
                 {children}
             </div>
