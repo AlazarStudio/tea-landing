@@ -24,3 +24,29 @@ main {
     gap: 80px;
     padding-bottom: 80px;
 }
+
+
+@media screen and (min-width: 320px) and (max-width: 425px) {
+    main{
+        gap: 30px !important;
+        padding-bottom: 30px;
+    }
+    .logoImg{
+        width: 100px !important;
+    }
+    .logoText{
+        width: 80% !important;
+    }
+
+    .partner_logo{
+        width: 40% !important;
+        height: auto !important;
+    }
+
+    .bottomImgLine{
+        margin-top: -30px !important;
+    }
+    textarea{
+        width: 100% !important;
+    }
+}

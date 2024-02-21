@@ -30,9 +30,9 @@ function MessageBlock({ children, ...props }) {
             return;
         }
 
-        let message = $("#messagePlace").val();
-        $("#messagePlace").val('');
-        console.log(message);
+        let message = $("#messagePlace").val();  
+
+        
 
         localStorage.setItem('lastSentTime', currentTime);
         setLastSentTime(currentTime);
@@ -51,7 +51,7 @@ function MessageBlock({ children, ...props }) {
                 outline: 'none',
                 fontSize: '16px',
                 resize: 'none',
-            }}></textarea>
+            }} required></textarea>
 
             {timeLeft > 0 && (
                 <Text color={'#fff'}>

@@ -4,7 +4,7 @@ import classes from './H2.module.css';
 function H2({ children, ...props }) {
     return (
         <>
-            <h2 style={{
+            <h2 className={classes.titleH2} style={{
                 fontFamily: props.font_family,
                 fontSize: props.font_size,
                 fontWeight: props.font_weight,

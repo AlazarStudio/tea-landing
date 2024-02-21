@@ -33,10 +33,10 @@ function Main_Page({ children, ...props }) {
                         justifyContent={'center'}
                     >
                         <CenterBlock>
-                            <img src={logo} alt="" style={{ width: '186px' }} />
+                            <img src={logo} alt="" style={{ width: '186px' }} className="logoImg" />
                         </CenterBlock>
                         <CenterBlock>
-                            <img src={teaName} alt="" style={{ width: '669px' }} />
+                            <img src={teaName} alt="" style={{ width: '669px' }} className="logoText"/>
                         </CenterBlock>
                         <CenterBlock>
                             <Button width={'319px'} height={'60px'}>
@@ -53,15 +53,13 @@ function Main_Page({ children, ...props }) {
 
                     <CenterBlock>
                         <RowBlock width={'100%'} gap={'100px'}>
-                            <img src={partner1} alt="" style={{ width: '352px', height: '100px' }} />
-                            <img src={partner2} alt="" style={{ width: '352px', height: '100px' }} />
+                            <img src={partner1} alt="" style={{ width: '352px', height: '100px' }}  className="partner_logo"/>
+                            <img src={partner2} alt="" style={{ width: '352px', height: '100px' }}  className="partner_logo" />
                         </RowBlock>
                     </CenterBlock>
                 </CenterBlock >
 
-                <CenterBlock>
-                    <img src={mainBlockLineImg} alt="" width={'100%'} style={{ marginTop: '-81px' }} />
-                </CenterBlock>
+                <img src={mainBlockLineImg} alt="" width={'100%'} style={{ marginTop: '-81px' }} className="bottomImgLine"/>
 
                 <CenterBlock width={'100%'} id="programm">
                     <ColumnBlock width={'var(--blockWidth)'} gap={'80px'}>
@@ -87,7 +85,7 @@ function Main_Page({ children, ...props }) {
                 </CenterBlock>
 
                 <CenterBlock id="chat">
-                    <ColumnBlock width={'var(--blockWidth)'} gap={'80px'} background={chatBackground} padding={'50px'} borderRadius={'30px'}>
+                    <ColumnBlock width={'var(--blockWidth)'} gap={'80px'} background={chatBackground} padding={'20px'} borderRadius={'30px'}>
                         <CenterBlock gap={'50px'}>
                             <H2 color={'#fff'}>ИНТЕРАКТИВНЫЙ ЧАТ</H2>
                             <ColumnBlock>
@@ -98,6 +96,7 @@ function Main_Page({ children, ...props }) {
                                     Сообщения отправляются с интервалом в 5 минут.
                                 </Text>
                             </ColumnBlock>
+                            
                             <MessageBlock/>
                         </CenterBlock>
                     </ColumnBlock>

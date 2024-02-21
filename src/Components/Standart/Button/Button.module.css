@@ -26,3 +26,11 @@
 .Button:hover svg path{
     fill: #000;
 }
+
+
+
+@media screen and (min-width: 320px) and (max-width: 425px) {
+    .Button{
+        width: 100% !important;
+    }
+}

@@ -6,3 +6,13 @@
     width: 80%;
     border-top: 1px solid #000000;
 }
+.Footer_link{
+    text-align: center;
+}
+
+
+@media screen and (min-width: 320px) and (max-width: 425px) {
+    .Footer{
+        padding-bottom: 30px !important;
+    }
+}

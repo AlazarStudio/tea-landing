@@ -2,3 +2,11 @@
     display: flex;
     flex-direction: column;
 }
+
+
+@media screen and (min-width: 320px) and (max-width: 425px) {
+    .ColumnBlock{
+        width: 100% !important;
+        gap: 30px !important;
+    }
+}

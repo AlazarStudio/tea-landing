@@ -1,6 +1,15 @@
-.CenterBlock{
+.CenterBlock {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+}
+
+@media screen and (min-width: 320px) and (max-width: 425px) {
+    .CenterBlock{
+        height: auto !important;
+        justify-content: space-around !important;
+        padding: 10px !important;
+        gap: 30px !important;
+    }
 }
