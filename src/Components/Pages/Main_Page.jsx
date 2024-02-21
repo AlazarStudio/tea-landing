@@ -15,6 +15,7 @@ import partner1 from "../../assets/partner1.png"
 import partner2 from "../../assets/partner2.png"
 import mainBlockLineImg from "../../assets/mainBlockLineImg.png"
 import chatBackground from "../../assets/chatBackground.png"
+import tea_logo_img from "../../assets/tea-logo-img.png"
 
 function Main_Page({ children, ...props }) {
     return (
@@ -66,19 +67,24 @@ function Main_Page({ children, ...props }) {
                         <H2>ПРОГРАММА МЕРОПРИЯТИЯ</H2>
                         <ColumnBlock>
                             <RowBlock>
-                                <EventBlock title={'12.00 - 12.10'} body={'Приветствие и знакомство с командой региона'} color={'#fff'} background_color={'#007030'} />
-                                <EventBlock title={'12.00 - 12.10'} body={'Приветствие и знакомство с командой региона'} color={'#000'} background_color={'#fff'} bottomImg={'true'} />
-                                <EventBlock title={'12.00 - 12.10'} body={'Приветствие и знакомство с командой региона'} color={'#fff'} background_color={'#E02010'} />
+                                <EventBlock button={'Станция 5 очередь канатной дороги(Кафе Привал)'} title={'15:00'} body={'Дегустация горного чая+выступление диджея'} color={'#fff'} background_color={'#007030'} />
+                                <EventBlock button={'Станция ТИЦ'} title={'15:00'} body={'Дегустация горного чая+аниматоры'} color={'#000'} background_color={'#fff'} bottomImg={'true'} />
+                                <EventBlock button={'Станция ТИЦ'} title={'16:00'} body={'Официальное открытие туристского информационного центра п.Домбай(презентация поздравительного чата) + фуршет+стюарды+техник'} color={'#fff'} background_color={'#E02010'} />
                             </RowBlock>
                             <RowBlock>
-                                <EventBlock title={'12.00 - 12.10'} body={'Приветствие и знакомство с командой региона'} color={'#000'} background_color={'#fff'} bottomImg={'true'} />
-                                <EventBlock title={'12.00 - 12.10'} body={'Приветствие и знакомство с командой региона'} color={'#fff'} background_color={'#0090D0'} />
-                                <EventBlock title={'12.00 - 12.10'} body={'Приветствие и знакомство с командой региона'} color={'#000'} background_color={'#fff'} bottomImg={'true'} />
+                                <EventBlock button={'Станция ТИЦ'} title={'16:15'} body={'Мастер-класс по вышиванию войлока(освещение,отдельное помещение) '} color={'#000'} background_color={'#fff'} bottomImg={'true'} />
+                                <EventBlock button={'Станция ТИЦ'} title={'17:15'} body={'Мастер-класс по национальным танцам(площадка перед экраном)'} color={'#fff'} background_color={'#0090D0'} />
+                                <EventBlock button={'Станция ТИЦ'} title={'17:15'} body={'Мастер класс по приготовлению шорпы'} color={'#000'} background_color={'#fff'} bottomImg={'true'} />
                             </RowBlock>
                             <RowBlock>
-                                <EventBlock title={'12.00 - 12.10'} body={'Приветствие и знакомство с командой региона'} color={'#fff'} background_color={'#E02010'} />
-                                <EventBlock title={'12.00 - 12.10'} body={'Приветствие и знакомство с командой региона'} color={'#000'} background_color={'#fff'} bottomImg={'true'} />
-                                <EventBlock title={'12.00 - 12.10'} body={'Приветствие и знакомство с командой региона'} color={'#fff'} background_color={'#007030'} />
+                                <EventBlock button={'Станция ТИЦ'} title={'17:45'} body={'Викторина(розыгрыш значков и призов)'} color={'#fff'} background_color={'#E02010'} />
+                                <EventBlock button={'Станция ТИЦ'} title={'18:15'} body={'Дегустация национальной кухни(шорпа) и горного чая '} color={'#000'} background_color={'#fff'} bottomImg={'true'} />
+                                <EventBlock button={'Станция ТИЦ'} title={'18:30'} body={'Работа поздравительного чата'} color={'#fff'} background_color={'#007030'} />
+                            </RowBlock>
+                            <RowBlock>
+                                <EventBlock button={'Станция ТИЦ'} title={'20:00'} body={'Свободный микрофон'} color={'#000'} background_color={'#fff'}  bottomImg={'true'} />
+                                <EventBlock button={'Станция ТИЦ'} title={'20:00'} body={'Турнир по PS5'} color={'#fff'} background_color={'#0090D0'}/>
+                                <EventBlock img={tea_logo_img} color={'#000'} background_color={'#fff'}  bottomImg={'true'}/>
                             </RowBlock>
                         </ColumnBlock>
                     </ColumnBlock>

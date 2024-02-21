@@ -14,7 +14,7 @@ function Footer({ children, ...props }) {
                             <div className={classes.Footer_line}></div>
                             <ColumnBlock>
                                 <CenterBlock gap={'20px'}>
-                                    <a href="/" className={classes.Footer_link}>Политика конфиденциальности</a>
+                                    <div className={classes.Footer_link}>Политика конфиденциальности</div>
                                     <div className={classes.Footer_link}>Согласие на обработку персональных данных</div>
                                     <div className={classes.Footer_link}>Контактный номер 8000000000</div>
                                 </CenterBlock>
