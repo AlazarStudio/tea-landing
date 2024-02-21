@@ -12,7 +12,7 @@ function EventBlock({ children, ...props }) {
                     <div className={classes.EventBlock__gapBlock}>
                         <div className={classes.EventBlock__gapBlock___text}>
                             {props.title ? <div className={classes.EventBlock_title}>{props.title}</div> : null}
-
+                            
                             {props.body ? <div className={classes.EventBlock_body}>{props.body}</div> : null}
                         </div>
                         {props.button ?

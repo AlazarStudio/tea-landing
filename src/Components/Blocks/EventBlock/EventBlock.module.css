@@ -14,6 +14,7 @@
     font-weight: 600;
     line-height: 49px;
     letter-spacing: 0em;
+    margin-bottom: 20px;
 }
 
 .EventBlock_body {
@@ -47,7 +48,7 @@
 }
 
 .EventBlock__gapBlock{
-    height: calc(100% - 85px);
+    height: calc(100% - 80px);
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -62,6 +63,7 @@
 
     .EventBlock_title {
         font-size: 24px !important;
+        margin-bottom: 5px !important;
     }
 
     .EventBlock_body {
