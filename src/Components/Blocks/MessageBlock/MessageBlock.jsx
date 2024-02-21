@@ -31,8 +31,7 @@ function MessageBlock({ children, ...props }) {
         }
 
         let message = $("#messagePlace").val();  
-
-        
+        $("#messagePlace").val('');  
 
         localStorage.setItem('lastSentTime', currentTime);
         setLastSentTime(currentTime);
