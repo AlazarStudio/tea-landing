@@ -10,7 +10,7 @@ function MessageBlock({ children, ...props }) {
 
     useEffect(() => {
         const timer = setInterval(() => {
-            let timerNum = 1;
+            let timerNum = 5;
             const currentTime = new Date().getTime();
             if (lastSentTime && currentTime - parseInt(lastSentTime) < timerNum * 60 * 1000) {
                 const timePassed = currentTime - parseInt(lastSentTime);
@@ -24,14 +24,11 @@ function MessageBlock({ children, ...props }) {
         return () => clearInterval(timer);
     }, [lastSentTime]);
 
-    const fetchData = async () => {
+    const fetchData = async (messageData) => {
         try {
-            const response = await axios.get('http://gorchay.kchturism.ru/api/message.php');
-            console.log(response.data);
-            // Обработка полученных данных
+            const response = await axios.get(`http://gorchay.kchturism.ru/api/add_message.php?message=${messageData}`);
         } catch (error) {
             console.error('Error fetching data:', error);
-            // Обработка ошибки
         }
     };
 
@@ -45,7 +42,9 @@ function MessageBlock({ children, ...props }) {
         localStorage.setItem('lastSentTime', currentTime);
         setLastSentTime(currentTime);
 
-        fetchData();
+        fetchData(message);
+        setMessage('');
+        alert('Сообщение успешно отправлено');
     }
 
     const minutes = Math.floor(timeLeft / (1000 * 60));
