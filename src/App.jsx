@@ -4,6 +4,7 @@ import { Route, Routes } from "react-router-dom";
 import Main_Page from "./Components/Pages/Main_Page";
 import Non_Found_Page from "./Components/Pages/Non_Found_Page";
 import Layout from "./Components/Standart/Layout/Layout";
+import Chat from "./Components/Blocks/Chat/Chat";
 
 function App() {
   return (
@@ -11,6 +12,7 @@ function App() {
       <Routes>
         <Route path="/" element={<Layout />}>
           <Route index element={<Main_Page />} />
+          <Route path="/chat" element={<Chat/>} />
           <Route path="*" element={<Non_Found_Page />} />
         </Route>
       </Routes>

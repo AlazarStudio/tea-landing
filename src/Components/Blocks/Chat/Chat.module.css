@@ -1,8 +1,15 @@
+.fullWidthChatBlock{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px 50px 100px 50px;
+}
+
 .Chat {
     width: 100%;
     height: 100%;
-    padding: 50px;
-    background-color: #cecece;
     overflow-y: scroll;
     scrollbar-width: none;
     -ms-overflow-style: none;
@@ -12,11 +19,51 @@
     display: none;
 }
 
-
 .messBlock {
     width: 100%;
     margin-bottom: 20px;
     background-color: #fff;
     padding: 10px;
     border-radius: 10px;
+    gap: 20px;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.chat_fio{
+    font-size: 16px;
+    color: rgb(0, 144, 208);
+    font-weight: 600;
+}
+
+.chat_text{
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.chat_date{
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+}
+
+.textPositionChat{
+    width: 100%;
+    position: absolute;
+    bottom: 50px;
+    left: 50px;
+    width: calc(100% - 100px);
+}
+
+
+@media screen and (min-width: 320px) and (max-width: 425px) {
+    .fullWidthChatBlock{
+        padding: 10px 10px 60px 10px;
+    }
+    .textPositionChat{
+        bottom: 10px;
+        left: 10px;
+        width: calc(100% - 20px);;
+    }
 }
