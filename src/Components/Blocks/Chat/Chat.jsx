@@ -3,7 +3,6 @@ import axios from "axios";
 import classes from "./Chat.module.css";
 
 import chat_bg from "../../../assets/chat_bg.png";
-import CenterBlock from "../../Standart/CenterBlock/CenterBlock";
 
 function Chat({ children, ...props }) {
   let chatMass = [
@@ -11,7 +10,7 @@ function Chat({ children, ...props }) {
       fio: "Джатдоев Алим",
       text: "Привет",
       date: "2024-02-22 13:12:46",
-      showMess: "true",
+      showMess: "false",
       moderedMess: "true",
     },
     {
@@ -32,8 +31,8 @@ function Chat({ children, ...props }) {
       fio: "Джатдоев Алим",
       text: "Привет",
       date: "2024-02-22 13:12:46",
-      showMess: "true",
-      moderedMess: "false",
+      showMess: "false",
+      moderedMess: "true",
     },
     {
       fio: "Гочияев Руслан",
@@ -53,8 +52,8 @@ function Chat({ children, ...props }) {
       fio: "Джатдоев Алим",
       text: "Привет",
       date: "2024-02-22 13:12:46",
-      showMess: "true",
-      moderedMess: "false",
+      showMess: "false",
+      moderedMess: "true",
     },
     {
       fio: "Гочияев Руслан",
@@ -74,8 +73,8 @@ function Chat({ children, ...props }) {
       fio: "Джатдоев Алим",
       text: "Привет",
       date: "2024-02-22 13:12:46",
-      showMess: "true",
-      moderedMess: "false",
+      showMess: "false",
+      moderedMess: "true",
     },
     {
       fio: "Гочияев Руслан",
@@ -95,8 +94,8 @@ function Chat({ children, ...props }) {
       fio: "Джатдоев Алим",
       text: "Привет",
       date: "2024-02-22 13:12:46",
-      showMess: "true",
-      moderedMess: "false",
+      showMess: "false",
+      moderedMess: "true",
     },
     {
       fio: "Гочияев Руслан",
@@ -116,8 +115,8 @@ function Chat({ children, ...props }) {
       fio: "Джатдоев Алим",
       text: "Привет",
       date: "2024-02-22 13:12:46",
-      showMess: "true",
-      moderedMess: "false",
+      showMess: "false",
+      moderedMess: "true",
     },
     {
       fio: "Гочияев Руслан",
@@ -137,8 +136,8 @@ function Chat({ children, ...props }) {
       fio: "Джатдоев Алим",
       text: "Привет",
       date: "2024-02-22 13:12:46",
-      showMess: "true",
-      moderedMess: "false",
+      showMess: "false",
+      moderedMess: "true",
     },
     {
       fio: "Гочияев Руслан",
@@ -158,8 +157,8 @@ function Chat({ children, ...props }) {
       fio: "Джатдоев Алим",
       text: "Привет",
       date: "2024-02-22 13:12:46",
-      showMess: "true",
-      moderedMess: "false",
+      showMess: "false",
+      moderedMess: "true",
     },
     {
       fio: "Гочияев Руслан",
@@ -231,7 +230,6 @@ function Chat({ children, ...props }) {
       }
     }
   };
-
   return (
     <>
       <div
