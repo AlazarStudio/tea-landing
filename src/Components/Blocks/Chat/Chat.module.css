@@ -1,0 +1,21 @@
+.Chat {
+    width: 100%;
+    height: 100%;
+    padding: 50px;
+    background-color: #cecece;
+    overflow-y: scroll;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+}
+
+.Chat::-webkit-scrollbar {
+    display: none;
+}
+
+
+.messBlock {
+    width: 100%;
+    height: 200px;
+    border: 2px solid red;
+    margin-bottom: 20px;
+}

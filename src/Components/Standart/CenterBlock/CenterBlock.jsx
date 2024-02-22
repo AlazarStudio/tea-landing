@@ -11,8 +11,10 @@ function CenterBlock({ children, ...props }) {
                 background: `url(${props.background})`,
                 backgroundRepeat: 'no-repeat',
                 backgroundSize: 'cover',
+                backgroundColor: props.backgroundColor,
                 margin: props.margin,
                 padding: props.padding,
+                border: props.border,
             }}>
                 {children}
             </div>

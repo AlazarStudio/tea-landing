@@ -39,14 +39,19 @@ function MessageBlock({ children, ...props }) {
             return;
         }
 
-        const currentTime = new Date().getTime();
-        localStorage.setItem('lastSentTime', currentTime);
-        setLastSentTime(currentTime);
+        if (message != '' && userName != ''){
+            const currentTime = new Date().getTime();
+            localStorage.setItem('lastSentTime', currentTime);
+            setLastSentTime(currentTime);
+    
+            fetchData(userName, message);
+            setMessage('');
+            setUserName('');
+            alert('Сообщение успешно отправлено');
+        } else {
+            alert('Заполните все поля');
+        }
 
-        fetchData(userName, message);
-        setMessage('');
-        setUserName('');
-        alert('Сообщение успешно отправлено');
     }
 
     const minutes = Math.floor(timeLeft / (1000 * 60));

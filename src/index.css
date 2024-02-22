@@ -47,4 +47,7 @@ main {
     textarea{
         width: 100% !important;
     }
+    input{
+        width: 100% !important;
+    }
 }

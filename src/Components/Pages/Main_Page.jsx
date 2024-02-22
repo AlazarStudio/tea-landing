@@ -16,8 +16,32 @@ import partner2 from "../../assets/partner2.png"
 import mainBlockLineImg from "../../assets/mainBlockLineImg.png"
 import chatBackground from "../../assets/chatBackground.webp"
 import tea_logo_img from "../../assets/tea-logo-img.png"
+import Chat from "../Blocks/Chat/Chat";
 
 function Main_Page({ children, ...props }) {
+    let chatMass = [
+        {
+            fio: 'Джатдоев Алим',
+            text: 'Привет',
+            date: '2024-02-22 13:12:46',
+            showMess: 'true',
+            moderedMess: 'true',
+        },
+        {
+            fio: 'Гочияев Руслан',
+            text: 'Привет Привет Привет',
+            date: '2024-02-22 13:17:46',
+            showMess: 'true',
+            moderedMess: 'true',
+        },
+        {
+            fio: 'Уртенов Азамат',
+            text: 'Hello',
+            date: '2024-02-22 13:25:46',
+            showMess: 'false',
+            moderedMess: 'true',
+        }
+    ]
     return (
         <>
             <main>
@@ -36,7 +60,7 @@ function Main_Page({ children, ...props }) {
                             <img src={logo} alt="" style={{ width: '186px' }} className="logoImg" />
                         </CenterBlock>
                         <CenterBlock>
-                            <img src={teaName} alt="" style={{ width: '669px' }} className="logoText"/>
+                            <img src={teaName} alt="" style={{ width: '669px' }} className="logoText" />
                         </CenterBlock>
                         <CenterBlock>
                             <Button width={'319px'} height={'60px'}>
@@ -53,13 +77,13 @@ function Main_Page({ children, ...props }) {
 
                     <CenterBlock>
                         <RowBlock width={'100%'} gap={'100px'}>
-                            <img src={partner1} alt="" style={{ width: '352px', height: '100px' }}  className="partner_logo"/>
-                            <img src={partner2} alt="" style={{ width: '352px', height: '100px' }}  className="partner_logo" />
+                            <img src={partner1} alt="" style={{ width: '352px', height: '100px' }} className="partner_logo" />
+                            <img src={partner2} alt="" style={{ width: '352px', height: '100px' }} className="partner_logo" />
                         </RowBlock>
                     </CenterBlock>
                 </CenterBlock >
 
-                <img src={mainBlockLineImg} alt="" width={'100%'} style={{ marginTop: '-81px' }} className="bottomImgLine"/>
+                <img src={mainBlockLineImg} alt="" width={'100%'} style={{ marginTop: '-81px' }} className="bottomImgLine" />
 
                 <CenterBlock width={'100%'} id="programm">
                     <ColumnBlock width={'var(--blockWidth)'} gap={'80px'}>
@@ -81,12 +105,19 @@ function Main_Page({ children, ...props }) {
                                 <EventBlock button={'Станция ТИЦ'} title={'18:30'} body={'Работа поздравительного чата'} color={'#fff'} background_color={'#007030'} />
                             </RowBlock>
                             <RowBlock>
-                                <EventBlock button={'Станция ТИЦ'} title={'20:00'} body={'Свободный микрофон'} color={'#000'} background_color={'#fff'}  bottomImg={'true'} />
-                                <EventBlock button={'Станция ТИЦ'} title={'20:00'} body={'Турнир по PS5'} color={'#fff'} background_color={'#0090D0'}/>
-                                <EventBlock img={tea_logo_img} color={'#000'} background_color={'#fff'}  bottomImg={'true'}/>
+                                <EventBlock button={'Станция ТИЦ'} title={'20:00'} body={'Свободный микрофон'} color={'#000'} background_color={'#fff'} bottomImg={'true'} />
+                                <EventBlock button={'Станция ТИЦ'} title={'20:00'} body={'Турнир по PS5'} color={'#fff'} background_color={'#0090D0'} />
+                                <EventBlock img={tea_logo_img} color={'#000'} background_color={'#fff'} bottomImg={'true'} />
                             </RowBlock>
                         </ColumnBlock>
                     </ColumnBlock>
+                </CenterBlock>
+
+                <CenterBlock
+                    width={'100%'}
+                    height={'100vh'}
+                >
+                    <Chat chatMass={chatMass}/>
                 </CenterBlock>
 
                 <CenterBlock id="chat">
@@ -101,13 +132,13 @@ function Main_Page({ children, ...props }) {
                                     Сообщения отправляются с интервалом в 5 минут.
                                 </Text>
                             </ColumnBlock>
-                            
-                            <MessageBlock/>
+
+                            <MessageBlock />
                         </CenterBlock>
                     </ColumnBlock>
                 </CenterBlock>
-                
-                <img src={mainBlockLineImg} alt="" width={'100%'} style={{ marginTop: '0px', transform: 'rotate(180deg)' }} className="bottomImgLine"/>
+
+                <img src={mainBlockLineImg} alt="" width={'100%'} style={{ marginTop: '0px', transform: 'rotate(180deg)' }} className="bottomImgLine" />
             </main>
         </>
     );
