@@ -8,13 +8,13 @@ import Text from "../Standart/Text/Text";
 import EventBlock from "../Blocks/EventBlock/EventBlock";
 import MessageBlock from "../Blocks/MessageBlock/MessageBlock";
 
-import backgroundMainImg from "../../assets/backgroundMainImg.png"
+import backgroundMainImg from "../../assets/backgroundMainImg.webp"
 import logo from "../../assets/герб.png"
 import teaName from "../../assets/ДЕНЬ ГОРНОГО ЧАЯ.png"
 import partner1 from "../../assets/partner1.png"
 import partner2 from "../../assets/partner2.png"
 import mainBlockLineImg from "../../assets/mainBlockLineImg.png"
-import chatBackground from "../../assets/chatBackground.png"
+import chatBackground from "../../assets/chatBackground.webp"
 import tea_logo_img from "../../assets/tea-logo-img.png"
 
 function Main_Page({ children, ...props }) {
@@ -107,6 +107,8 @@ function Main_Page({ children, ...props }) {
                         </CenterBlock>
                     </ColumnBlock>
                 </CenterBlock>
+                
+                <img src={mainBlockLineImg} alt="" width={'100%'} style={{ marginTop: '0px', transform: 'rotate(180deg)' }} className="bottomImgLine"/>
             </main>
         </>
     );

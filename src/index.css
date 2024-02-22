@@ -22,14 +22,12 @@ main {
     display: flex;
     flex-direction: column;
     gap: 80px;
-    padding-bottom: 80px;
 }
 
 
 @media screen and (min-width: 320px) and (max-width: 425px) {
     main{
         gap: 30px !important;
-        padding-bottom: 30px;
     }
     .logoImg{
         width: 100px !important;

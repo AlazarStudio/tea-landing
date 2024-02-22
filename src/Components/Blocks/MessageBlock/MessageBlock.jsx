@@ -10,7 +10,7 @@ function MessageBlock({ children, ...props }) {
 
     useEffect(() => {
         const timer = setInterval(() => {
-            let timerNum = 5;
+            let timerNum = 0;
             const currentTime = new Date().getTime();
             if (lastSentTime && currentTime - parseInt(lastSentTime) < timerNum * 60 * 1000) {
                 const timePassed = currentTime - parseInt(lastSentTime);
@@ -26,7 +26,7 @@ function MessageBlock({ children, ...props }) {
 
     const fetchData = async (messageData) => {
         try {
-            const response = await axios.get(`http://gorchay.kchturism.ru/api/add_message.php?message=${messageData}`);
+            const response = await axios.get(`https://gorchay.kchturism.ru/api/add_message.php?message=${messageData}`);
         } catch (error) {
             console.error('Error fetching data:', error);
         }
