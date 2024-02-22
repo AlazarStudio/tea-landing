@@ -26,7 +26,6 @@ function Main_Page({ children, ...props }) {
                     height={'100vh'}
                     background={backgroundMainImg}
                     gap={'70px'}
-                    padding={'100px 0 0 0'}
                 >
                     <ColumnBlock
                         width={'900px'}
