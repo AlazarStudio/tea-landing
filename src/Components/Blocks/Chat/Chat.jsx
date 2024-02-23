@@ -15,15 +15,14 @@ function Chat({ children, ...props }) {
         const response = await axios.get('https://gorchay.kchturism.ru/api/message.php');
         const data = response.data;
         setMessages(data);
-        console.log(data);
-        // setMessages(chatMass);
       } catch (error) {
         console.error("Error fetching messages:", error);
       }
     };
 
     fetchMessages();
-
+    const pollingInterval = setInterval(fetchMessages, 5000);
+    
     return () => {};
   }, []);
 
