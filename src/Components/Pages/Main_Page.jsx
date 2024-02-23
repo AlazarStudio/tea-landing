@@ -99,19 +99,21 @@ function Main_Page({ children, ...props }) {
                 <EventBlock
                   button={"Станция 5 очередь канатной дороги(Кафе Привал)"}
                   title={"10:00 - 15:00"}
-                  body={"Дегустация горного чая. Детская анимационная программа. Авторский сет от диджея Mr.As - 'Танцевальный склон'"}
+                  body={"Дегустация горного чая.  Детская анимационная программа. Авторский сет от диджея Mr.As - 'Танцевальный склон'"}
                   color={"#fff"}
                   background_color={"#007030"}                  
                   link={'https://yandex.ru/maps/-/CDBpiU0D'}
+                  split={'split'}
                 />
                 <EventBlock
                   button={"Станция ТИЦ"}
                   title={"10:00 - 15:00"}
-                  body={"Дегустация горного чая Детская анимационная программа "}
+                  body={"Дегустация горного чая. Детская анимационная программа"}
                   color={"#000"}
                   background_color={"#fff"}
                   bottomImg={"true"}
                   link={'https://yandex.ru/maps/-/CDBlq4kR'}
+                  split={'split'}
                 />
                 <EventBlock
                   button={"Станция ТИЦ"}
