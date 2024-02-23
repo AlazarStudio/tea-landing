@@ -57,7 +57,7 @@
 }
 
 
-@media screen and (min-width: 320px) and (max-width: 425px) {
+@media screen and (min-width: 320px) and (max-width: 768px) {
     .fullWidthChatBlock{
         padding: 10px 10px 60px 10px;
     }
@@ -65,5 +65,14 @@
         bottom: 10px;
         left: 10px;
         width: calc(100% - 20px);;
+    }
+    .chat_text{
+        font-size: 20px;
+    }
+    .chat_fio{
+        font-size: 14px;
+    }
+    .chat_date{
+        font-size: 14px;
     }
 }

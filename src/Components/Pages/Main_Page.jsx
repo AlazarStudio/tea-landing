@@ -201,9 +201,7 @@ function Main_Page({ children, ...props }) {
           </ColumnBlock>
         </CenterBlock>
 
-        
-          <Chat />
-
+        <Chat />
 
         <CenterBlock id="chat">
           <ColumnBlock
