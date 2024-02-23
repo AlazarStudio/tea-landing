@@ -16,7 +16,7 @@ function EventBlock({ children, ...props }) {
                             {props.body ? <div className={classes.EventBlock_body}>{props.body}</div> : null}
                         </div>
                         {props.button ?
-                            <Button width={'319px'} height={'60px'} style={{
+                            <Button link={props.link} width={'319px'} height={'60px'} style={{
                                 border: `1px solid ${props.color}`,
                                 color: props.color,
                                 height: '60px',

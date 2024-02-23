@@ -47,7 +47,7 @@ function Main_Page({ children, ...props }) {
               />
             </CenterBlock>
             <CenterBlock>
-              <Button width={"319px"} height={"60px"}>
+              <Button width={"319px"} height={"60px"} link={'https://yandex.ru/maps/-/CDBlqCPF'}>
                 <svg
                   width="16"
                   height="22"
@@ -98,27 +98,30 @@ function Main_Page({ children, ...props }) {
               <RowBlock>
                 <EventBlock
                   button={"Станция 5 очередь канатной дороги(Кафе Привал)"}
-                  title={"15:00"}
-                  body={"Дегустация горного чая+выступление диджея"}
+                  title={"10:00 - 15:00"}
+                  body={"Дегустация горного чая Детская анимационная программа Авторский сет от диджея Mr.As 'Танцевальный склон'"}
                   color={"#fff"}
-                  background_color={"#007030"}
+                  background_color={"#007030"}                  
+                  link={'https://yandex.ru/maps/-/CDBpiU0D'}
                 />
                 <EventBlock
                   button={"Станция ТИЦ"}
-                  title={"15:00"}
-                  body={"Дегустация горного чая+аниматоры"}
+                  title={"10:00 - 15:00"}
+                  body={"Дегустация горного чая Детская анимационная программа "}
                   color={"#000"}
                   background_color={"#fff"}
                   bottomImg={"true"}
+                  link={'https://yandex.ru/maps/-/CDBlq4kR'}
                 />
                 <EventBlock
                   button={"Станция ТИЦ"}
                   title={"16:00"}
                   body={
-                    "Официальное открытие туристского информационного центра п.Домбай(презентация поздравительного чата) + фуршет+стюарды+техник"
+                    "Официальное открытие туристского информационного центра п.Домбай"
                   }
                   color={"#fff"}
                   background_color={"#E02010"}
+                  link={'https://yandex.ru/maps/-/CDBlq4kR'}
                 />
               </RowBlock>
               <RowBlock>
@@ -126,20 +129,22 @@ function Main_Page({ children, ...props }) {
                   button={"Станция ТИЦ"}
                   title={"16:15"}
                   body={
-                    "Мастер-класс по вышиванию войлока(освещение,отдельное помещение) "
+                    "Мастер-класс по вышиванию войлока"
                   }
                   color={"#000"}
                   background_color={"#fff"}
                   bottomImg={"true"}
+                  link={'https://yandex.ru/maps/-/CDBlq4kR'}
                 />
                 <EventBlock
                   button={"Станция ТИЦ"}
-                  title={"17:15"}
+                  title={"16:15"}
                   body={
-                    "Мастер-класс по национальным танцам(площадка перед экраном)"
+                    "Мастер-класс по национальным танцам"
                   }
                   color={"#fff"}
                   background_color={"#0090D0"}
+                  link={'https://yandex.ru/maps/-/CDBlq4kR'}
                 />
                 <EventBlock
                   button={"Станция ТИЦ"}
@@ -148,30 +153,34 @@ function Main_Page({ children, ...props }) {
                   color={"#000"}
                   background_color={"#fff"}
                   bottomImg={"true"}
+                  link={'https://yandex.ru/maps/-/CDBlq4kR'}
                 />
               </RowBlock>
               <RowBlock>
                 <EventBlock
                   button={"Станция ТИЦ"}
                   title={"17:45"}
-                  body={"Викторина(розыгрыш значков и призов)"}
+                  body={"Викторина с призами"}
                   color={"#fff"}
                   background_color={"#E02010"}
+                  link={'https://yandex.ru/maps/-/CDBlq4kR'}
                 />
                 <EventBlock
                   button={"Станция ТИЦ"}
                   title={"18:15"}
-                  body={"Дегустация национальной кухни(шорпа) и горного чая "}
+                  body={"Дегустация национальной кухни"}
                   color={"#000"}
                   background_color={"#fff"}
                   bottomImg={"true"}
+                  link={'https://yandex.ru/maps/-/CDBlq4kR'}
                 />
                 <EventBlock
                   button={"Станция ТИЦ"}
-                  title={"18:30"}
-                  body={"Работа поздравительного чата"}
+                  title={"18:30 - 20:00"}
+                  body={"Вечерная развлекательная программа "}
                   color={"#fff"}
                   background_color={"#007030"}
+                  link={'https://yandex.ru/maps/-/CDBlq4kR'}
                 />
               </RowBlock>
               <RowBlock>
@@ -182,6 +191,7 @@ function Main_Page({ children, ...props }) {
                   color={"#000"}
                   background_color={"#fff"}
                   bottomImg={"true"}
+                  link={'https://yandex.ru/maps/-/CDBlq4kR'}
                 />
                 <EventBlock
                   button={"Станция ТИЦ"}
@@ -189,6 +199,7 @@ function Main_Page({ children, ...props }) {
                   body={"Турнир по PS5"}
                   color={"#fff"}
                   background_color={"#0090D0"}
+                  link={'https://yandex.ru/maps/-/CDBlq4kR'}
                 />
                 <EventBlock
                   img={tea_logo_img}

@@ -15,8 +15,10 @@ function Button({ children, timeLeft, ...props }) {
         buttonStyles.opacity = '0.5';
     }
 
+    let target = props.link ? "_blank" : null;
+
     return (
-        <Link to={props.link} className={classes.Button} style={buttonStyles} {...props}>
+        <Link to={props.link} target={target} className={classes.Button} style={buttonStyles} {...props}>
             {children}
         </Link>
     );

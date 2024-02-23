@@ -13,7 +13,7 @@
     transition: all 0.3s ease-in-out;
 }
 
-.Button:hover{
+/* .Button:hover{
     background-color: #fff;
     color: #000 !important;
 }
@@ -24,7 +24,7 @@
 
 .Button:hover svg path{
     fill: #000;
-}
+} */
 
 
 
