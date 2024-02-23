@@ -202,7 +202,7 @@ function Main_Page({ children, ...props }) {
         </CenterBlock>
 
         
-          {/* <Chat chatMass={chatMass} /> */}
+          <Chat />
 
 
         <CenterBlock id="chat">
