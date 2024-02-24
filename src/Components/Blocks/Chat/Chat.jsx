@@ -86,26 +86,6 @@ function Chat({ children, ...props }) {
             </div>
           ))}
         </div>
-
-        <div className={classes.textPositionChat}
-          style={{
-
-          }}
-        >
-          <input
-            type="text"
-            placeholder="Сообщение"
-            style={{
-              width: "100%",
-              height: "50px",
-              outline: "none",
-              borderRadius: "50px",
-              border: "none",
-              padding: "0 20px",
-              fontSize: "16px",
-            }}
-          />
-        </div>
       </div>
     </>
   );
