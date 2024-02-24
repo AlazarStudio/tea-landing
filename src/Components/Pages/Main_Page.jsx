@@ -182,8 +182,6 @@ function Main_Page({ children, ...props }) {
           </ColumnBlock>
         </CenterBlock>
 
-
-
         <CenterBlock id="chat">
           <ColumnBlock
             width={"var(--blockWidth)"}

@@ -67,8 +67,8 @@ function Chat({ children, ...props }) {
         style={{
           background: `url(${chat_bg})`,
           backgroundPosition: `center center`,
-          backgroundRepeat: "no-repeat",
-          backgroundSize: "cover",
+          // backgroundRepeat: "no-repeat",
+          // backgroundSize: "contain",
           position: "relative",
         }}
       >
@@ -80,7 +80,7 @@ function Chat({ children, ...props }) {
                   <div className={classes.messBlock}>
                     <div className={classes.chat_fio}>{message.fio}</div>
                     <div className={classes.chat_text}>{message.text}</div>
-                    <div className={classes.chat_date}>{message.date}</div>
+                    <div className={classes.chat_date}>{message.datemess}</div>
                   </div>
                 )}
             </div>
