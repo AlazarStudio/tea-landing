@@ -61,7 +61,7 @@
 @media screen and (min-width: 320px) and (max-width: 768px) {
     .fullWidthChatBlock{
         padding: 10px 10px 10px 10px;
-        height: 65vh !important;
+        height: 100vh !important;
         background-size: contain !important;
     }
     .textPositionChat{

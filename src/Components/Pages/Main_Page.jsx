@@ -57,6 +57,31 @@ function Main_Page({ children, ...props }) {
           className="bottomImgLine"
         />
 
+        <CenterBlock id="chat">
+          <ColumnBlock
+            width={"var(--blockWidth)"}
+            gap={"80px"}
+            background={chatBackground}
+            padding={"20px"}
+            borderRadius={"30px"}
+          >
+            <CenterBlock gap={"50px"}>
+              <H2 color={"#fff"}>ИНТЕРАКТИВНЫЙ ЧАТ</H2>
+              <ColumnBlock>
+                <Text color={"#fff"} width={"650px"}>
+                  Здесь вы можете написать сообщение, которое отобразиться на
+                  главном экране мероприятия.
+                </Text>
+                <Text color={"#fff"} width={"650px"}>
+                  Сообщения отправляются с интервалом в 5 минут.
+                </Text>
+              </ColumnBlock>
+
+              <MessageBlock />
+            </CenterBlock>
+          </ColumnBlock>
+        </CenterBlock>
+        
         <Chat />
 
         <CenterBlock width={"100%"} id="programm">
@@ -182,30 +207,6 @@ function Main_Page({ children, ...props }) {
           </ColumnBlock>
         </CenterBlock>
 
-        <CenterBlock id="chat">
-          <ColumnBlock
-            width={"var(--blockWidth)"}
-            gap={"80px"}
-            background={chatBackground}
-            padding={"20px"}
-            borderRadius={"30px"}
-          >
-            <CenterBlock gap={"50px"}>
-              <H2 color={"#fff"}>ИНТЕРАКТИВНЫЙ ЧАТ</H2>
-              <ColumnBlock>
-                <Text color={"#fff"} width={"650px"}>
-                  Здесь вы можете написать сообщение, которое отобразиться на
-                  главном экране мероприятия.
-                </Text>
-                <Text color={"#fff"} width={"650px"}>
-                  Сообщения отправляются с интервалом в 5 минут.
-                </Text>
-              </ColumnBlock>
-
-              <MessageBlock />
-            </CenterBlock>
-          </ColumnBlock>
-        </CenterBlock>
 
         <img
           src={mainBlockLineImg}
